@@ -1,0 +1,150 @@
+ %% Inicio del archivo `cv.tex'.
+ %% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+ %
+ % This work may be distributed and/or modified under the
+ % conditions of the LaTeX Project Public License version 1.3c,
+ % available at http://www.latex-project.org/lppl/.
+ % Modificaciones extras Ludwin Hernández ludwin.hernandezsv@gmail.com
+ % Descargar desde https://github.com/ludwin/LaTex-ModernCV
+ \documentclass[11pt,a4paper,sans]{moderncv}   % opciones posibles incluyen tamaño de fuente ('10pt', '11pt' and '12pt'), tamaño de papel 
+   
+    % temas de moderncv
+    \moderncvstyle{casual}                        % las opciones de estilo son 'casual' (por omision),'classic', 'oldstyle' y 'banking'
+    \moderncvcolor{blue}                          % opciones de color 'blue' (por omision), 'orange', 'green', 'red', 'purple', 'grey' y 'black'
+    \usepackage[utf8]{inputenc}                   % Incluir juego de caracteres español
+    %\renewcommand{\familydefault}{\sfdefault}    % para seleccionar la fuente por omision, use '\sfdefault' para la fuente sans serif, 
+
+    \nopagenumbers{}                             % elimine el comentario para suprimir la numeracion automatica de las paginas para CVs mayores 
+
+   
+    % codificacion de caracteres
+    %\usepackage[utf8]{inputenc}                  % reemplace con su codificacion
+    %\usepackage{CJKutf8}                         % si necesita usa CJK para redactar su CV en chino, japones o coreano
+    \graphicspath{ {img/} }
+    % ajustes para los margenes de pagina
+    \usepackage[scale=0.75]{geometry}
+    %\setlength{\hintscolumnwidth}{3cm}           % si desea cambiar el ando de la columna para las fechas 
+   
+    % datos personales
+    \name{Wilber}{Argueta}
+    %\title{Tíitulo del CV (opcional)}                   % dato opcional, elimine la linea si no desea el dato
+    \address{Col. Médica. Zona Arzobispado, Av Max Block }{San Salvador}{San Salvador}   % dato opcional, elimine la linea si no desea el dato
+    \phone[mobile]{+(503)~7913~2465}                     % dato opcional, elimine la linea si no desea el dato
+   % \phone[fixed]{+2~(345)~678~901}                      % dato opcional, elimine la linea si no desea el dato
+    %\phone[fax]{+3~(456)~789~012}                       % dato opcional, elimine la linea si no desea el dato
+    \email{arguetawilber93@gmail.com}                                 % dato opcional, elimine la linea si no desea el dato
+    \homepage{www.wargueta.com.es}                           % dato opcional, elimine la linea si no desea el dato
+    %\extrainfo{informacion adicional}                    % dato opcional, elimine la linea si no desea el dato
+    \photo[64pt][0.4pt]{perfil}                           % '64pt' es la altura a la que la imagen debe ser ajustada, 0.4pt es grosor del marco 
+    \social[github]{wilberArgueta}
+    \quote{Currículum Vítae}                       % dato opcional, elimine la linea si no desea el dato
+   
+    % para mostrar etiquetas numericas en la bibliografia (por omision no se muestran etiquetas), solo es util si desea incluir citas en en CV
+    %\makeatletter
+    %\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+    %\makeatother
+   
+    % bibliografia con varias fuentes
+    %\usepackage{multibib}
+    %\newcites{book,misc}{{Libros},{Otros}}
+    %----------------------------------------------------------------------------------
+    %            contenido
+    %----------------------------------------------------------------------------------
+    \begin{document}
+    %\begin{CJK*}{UTF8}{gbsn}                     % para redactar el CV en chino usando CJK
+    \maketitle 
+
+
+    \section{Datos Personales}
+    \cvitemwithcomment{DUI}{04868178-5}{}
+    \cvitemwithcomment{NIT}{1311-241293-101-9}{}
+    \cvitemwithcomment{Estado Civil}{Soltero}{}
+    \closesection
+    \section{Formación académica}
+    \cventry{2010--2011}{Bachiller}{INSTITUTO NACIONAL DE PERQUIN}{PERQUIN}{\textit}{Bachillerato General}  % Los argumentos del 3 al 6 pueden permanecer vacios
+    \cventry{2012--2019}{Estudiante}{UNIVERSIDAD DE ORIENTE}{SAN MIGUEL}{\textit}{Ing. En Sistemas Informáticos}
+   \closesection
+
+    \section{Otros títulos y seminarios}
+    \cventry{Enero 2018}{Angular desde Cero}{EDTEAM}{Escuela Digital}{}{}
+    \cventry{Diciembre 2017}{Go desde Cero}{EDTEAM}{Escuela Digital}{}{}
+    \cventry{Agosto 2019}{Becado del Curso Java 8 EE}{En Waresoft S.A de C.V}{Impartido por}{Consultor internacional Ing. Marco Arevalo Zambrano}{}
+    \closesection
+    \section{Habilidades}
+    \cventry{Conocimientos}{Antenci\'on al cliente}{}{}{}{}
+    \cventry{}{Microsoft Office}{}{}{}{}
+    \cventry{}{Experiencia Manejando}{}{}{}{}
+    \cventry{Habilidades}{Capacidad para trabajar bajo presi\'on}{}{}{}{}
+    \cventry{}{Capacidad para trabajo en equipo}{}{}{}{}
+    \cventry{}{Capacidad de adaptaci\'on}{}{}{}{}
+    \cventry{}{Resoluci\'on de problemas}{}{}{}{}
+    \closesection.
+    \newpage
+    \section{Experiencia Profesional Programador Analista}
+    \cventry{2018}{Programador Analista}{Desarrollo Sistema de Toma Pedido Y Facturación para Arambala Carajo}{}{}
+    \closesection
+ \section{Experiencia Profesional Desarrollador Oracle}
+    \cventry{2018}{Programador Apex}{Desarrollo de aplicacion bajo Apex 20.2.0, herramienta de gestión Notarial LexSoft, Waresoft S.A. de C.V.}{}{}
+    \closesection
+    \section{Idiomas}
+    \cvitemwithcomment{Ingles}{Tecnico}{}
+     \closesection
+
+    \section{Conocimientos Técnicos}
+    %Los comandos cvcomputer necesitan 4 llaves hola k ase
+    \cvcomputer{Sistemas Operativos}{GNU/Linux, Windows}{}{}
+    \cvline{Programación}{ \textsc{Java SE, Java EE}, Javascript, HTML5, Go}
+    \cvline{Oracle}{ \textsc{Java 8,9,11}, Oracle Forms, Oracle Apex 18.x-20.x}
+    \cvline{Framework}{ \textsc{Spring Boot, Hibernate, JPA, Spring Cloud, Spring Security}, Angular 6,10, Laravel 5, VueJS, Codeigniter 4}
+    \cvline{Electrónica}{Arduino, Rapsberry PI}{}{}
+    \cvcomputer{Bases de Datos}{MySQL, PosgreSQL, Oracle 19c}{}{}
+    \closesection{}
+   
+    \section{Referencias Profesionales}
+     \cventry{1-}{Lic. Brenda Monterrosa Esquivel}{Waresoft S.A de C.V}{San Salvador}{Tel: 6048-3590}{}{}
+    \cventry{2-}{Ing. Luis Roberto Canelo}{DominoSoft}{San Salvador}{Tel: 7039-7070}{}{}
+    \closesection
+    
+    \section{Referencias Personales}
+    \cventry{1-}{Yesenia Ortiz}{San Salvador}{Tel: 7808-5272}{}{}{}
+    \cventry{2-}{Marily Marquez}{San Salvador}{Tel: 7539-8404}{}{}{}
+    \closesection
+
+    \section{Pasatiempo favorito}
+    \cvline{1-}{\small Practicar Deportes Marciales}
+    \cvline{2-}{\small La lectura}
+    \closesection
+
+    \section{Interés}
+    \cvline{1-}{\small Software Libre}
+    \cvline{2-}{\small Astronomía}
+   
+    \renewcommand{\listitemsymbol}{-~}            % para cambiar el simbolo para las listas
+    \closesection
+
+   
+    % Las publicaciones tomadas de un archivo de BibTeX sin usar multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+   
+    \nocite{*}
+    \bibliographystyle{plain}
+    \bibliography{publications}                   % 'publications' es el nombre del archivo BibTeX
+   
+    % Las publicaciones tomadas de un archivo BibTeX usando el paquete multibib
+    %\section{Publicaciones}
+    %\nocitebook{book1,book2}
+    %\bibliographystylebook{plain}
+    %\bibliographybook{publications}              % 'publications' es el nombre del archivo BibTeX
+    %\nocitemisc{misc1,misc2,misc3}
+    %\bibliographystylemisc{plain}
+    %\bibliographymisc{publications}              % 'publications' es el nombre del archivo BibTeX
+   
+    %\clearpage\end{CJK*}
+    %\includegraphics[scale=0.25]{1} 
+    %\newline
+
+    %\includegraphics[scale=0.25]{2}                        % si esta redactando su CV en chino usando CJK, \clearpage es requerido por fancyhdr para que 
+    \end{document}
+   
+   
+    %% fin del archivo `cv.tex'.
+   
